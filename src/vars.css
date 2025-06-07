@@ -1,0 +1,59 @@
+/* Figma Styles of your File */:root {
+  /* Colors */
+  --primary: #2b187a;
+  --bg-shade: #e6f7ff;
+  --dribble: #e62872;
+  --heading-color: #282938;
+  --body: #1c1e53;
+
+  /* Fonts */
+  --heading-h1-font-family: Roboto-Bold, sans-serif;
+  --heading-h1-font-size: 56px;
+  --heading-h1-line-height: 120%;
+  --heading-h1-font-weight: 700;
+  --heading-h1-font-style: normal;
+  --heading-h2-font-family: Roboto-Bold, sans-serif;
+  --heading-h2-font-size: 48px;
+  --heading-h2-line-height: 120%;
+  --heading-h2-font-weight: 700;
+  --heading-h2-font-style: normal;
+  --heading-h3-font-family: Roboto-Bold, sans-serif;
+  --heading-h3-font-size: 24px;
+  --heading-h3-line-height: 140%;
+  --heading-h3-font-weight: 700;
+  --heading-h3-font-style: normal;
+  --body-01-font-family: Roboto-Regular, sans-serif;
+  --body-01-font-size: 18px;
+  --body-01-line-height: 150%;
+  --body-01-font-weight: 400;
+  --body-01-font-style: normal;
+  --sub-tittle-font-family: Roboto-SemiBold, sans-serif;
+  --sub-tittle-font-size: 16px;
+  --sub-tittle-line-height: 150%;
+  --sub-tittle-font-weight: 600;
+  --sub-tittle-font-style: normal;
+  --body-02-font-family: Roboto-Regular, sans-serif;
+  --body-02-font-size: 16px;
+  --body-02-line-height: 150%;
+  --body-02-font-weight: 400;
+  --body-02-font-style: normal;
+  --body-03-font-family: Roboto-SemiBold, sans-serif;
+  --body-03-font-size: 14px;
+  --body-03-line-height: 150%;
+  --body-03-font-weight: 600;
+  --body-03-font-style: normal;
+  --body-02-simi-bold-font-family: Roboto-SemiBold, sans-serif;
+  --body-02-simi-bold-font-size: 16px;
+  --body-02-simi-bold-line-height: 150%;
+  --body-02-simi-bold-font-weight: 600;
+  --body-02-simi-bold-font-style: normal;
+  --body-03-reg-font-family: Roboto-Regular, sans-serif;
+  --body-03-reg-font-size: 14px;
+  --body-03-reg-line-height: 150%;
+  --body-03-reg-font-weight: 400;
+  --body-03-reg-font-style: normal;
+
+  /* Effects */
+
+}
+/* Figma Color Variables of your File */
