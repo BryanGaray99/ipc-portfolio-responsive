@@ -5,7 +5,7 @@ export const ProjectsSection = () => {
     {
       id: 1,
       name: "Decision Tree Machine Learning Web Simulator",
-      image: "/project-1.png",
+      image: import.meta.env.BASE_URL + "project-1.png",
       description:
         "Decision Tree Simulator is a web application built with Django that allows you to predict data using machine learning models.",
       skills: ["HTML", "CSS", "JavaScript", "Python", "Django", "PostgreSQL"],
@@ -14,7 +14,7 @@ export const ProjectsSection = () => {
     {
       id: 2,
       name: "Arcade Game: Lobo, Cabra y Col: 5 Desafíos",
-      image: "/project-2.png",
+      image: import.meta.env.BASE_URL + "project-2.png",
       description:
         "The main objective was to meet a series of functional, non-functional requirements and perform different testing techniques.",
       skills: ["Node.js", "Express.js", "MongoDB", "Loadster", "Google Lighthouse"],
@@ -23,7 +23,7 @@ export const ProjectsSection = () => {
     {
       id: 3,
       name: "Astro Place: mock e-commerce",
-      image: "/project-3.png",
+      image: import.meta.env.BASE_URL + "/project-3.png",
       description:
         "Project of the \"React.js con Vite.js y TailwindCSS\" course from Platzi. The goal was to put into practice web development skills.",
       skills: ["React.js", "Vite.js", "TailwindCSS", "Netlify"],
@@ -32,7 +32,7 @@ export const ProjectsSection = () => {
     {
       id: 4,
       name: "Astro Place: Express Backend with PostgreSQL",
-      image: "/project-4.png",
+      image: import.meta.env.BASE_URL + "/project-4.png",
       description:
         "This project showcases essential backend practices, including ORM for PostgreSQL, Security with Passport.js, JWT and more.",
       skills: ["Node.js", "Express.js", "PostgreSQL", "Passport.js", "JWT", "Nodemailer"],

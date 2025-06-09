@@ -11,5 +11,5 @@ export default defineConfig(({ mode }) => ({
     },
   },
   // Configure base path for GitHub Pages
-  base: "/ipc-portfolio-responsive"
+  base: "/ipc-portfolio-responsive/"
 }));

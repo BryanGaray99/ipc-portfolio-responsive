@@ -1,5 +1,6 @@
 {
-  "name": "fusion-starter",
+  "name": "ipc-project-portfolio",
+  "version": "1.0.0",
   "homepage": "https://bryangaray99.github.io/ipc-portfolio-responsive/",
   "type": "module",
   "scripts": {

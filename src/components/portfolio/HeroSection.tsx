@@ -24,7 +24,7 @@ export const HeroSection = () => {
             <div className="relative">
               <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-2xl bg-white/20 backdrop-blur-sm">
                 <img
-                  src="/bryan.garay.png"
+                  src={import.meta.env.BASE_URL+"/bryan.garay.png"}
                   alt="Bryan Garay"
                   className="w-full h-full object-scale-down"
                   onError={(e) => {
