@@ -6,7 +6,7 @@ import { ProjectsSection } from "@/components/portfolio/ProjectsSection";
 const Index = () => {
   const handleContactClick = () => {
     window.location.href =
-      "mailto:bryan.garay@example.com?subject=Hello Bryan!";
+      "mailto:bryangarayacademico@gmail.com?subject=Hello Bryan!";
   };
 
   return (

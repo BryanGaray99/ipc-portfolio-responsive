@@ -11,7 +11,7 @@ export const HeroSection = () => {
           {/* Left side - Content */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1C1E53] leading-tight mb-4">
-              Hello, I'm <span className="text-[#2B187A]">Bryan Garay</span>
+              👋 Hello, I’m Bryan Garay Software Engineer
             </h1>
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-medium text-[#1C1E53] mb-8">
               Software Engineer
@@ -24,9 +24,9 @@ export const HeroSection = () => {
             <div className="relative">
               <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-2xl bg-white/20 backdrop-blur-sm">
                 <img
-                  src="/your-photo.jpg"
+                  src="/bryan.garay.png"
                   alt="Bryan Garay"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-scale-down"
                   onError={(e) => {
                     // Fallback to a placeholder if image doesn't exist
                     const target = e.target as HTMLImageElement;

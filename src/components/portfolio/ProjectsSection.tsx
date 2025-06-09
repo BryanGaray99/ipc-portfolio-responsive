@@ -4,43 +4,39 @@ export const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      name: "E-Commerce Platform",
-      image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
+      name: "Decision Tree Machine Learning Web Simulator",
+      image: "/project-1.png",
       description:
-        "A full-stack e-commerce platform with user authentication, payment processing, and inventory management.",
-      skills: ["React", "Node.js", "MongoDB", "Stripe", "TypeScript"],
-      link: "https://github.com/bryan-garay/ecommerce-platform",
+        "Decision Tree Simulator is a web application built with Django that allows you to predict data using machine learning models.",
+      skills: ["HTML", "CSS", "JavaScript", "Python", "Django", "PostgreSQL"],
+      link: "https://github.com/BryanGaray99/ML-Predicci-n-de-Nivel-de-Afectados-en-Desastres-Naturales",
     },
     {
       id: 2,
-      name: "Task Management App",
-      image:
-        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
+      name: "Arcade Game: Lobo, Cabra y Col: 5 Desafíos",
+      image: "/project-2.png",
       description:
-        "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      skills: ["React", "Socket.io", "Express", "PostgreSQL", "Redux"],
-      link: "https://github.com/bryan-garay/task-manager",
+        "The main objective was to meet a series of functional, non-functional requirements and perform different testing techniques.",
+      skills: ["Node.js", "Express.js", "MongoDB", "Loadster", "Google Lighthouse"],
+      link: "https://github.com/BryanGaray99/lobo-cabra-col-5-deafios",
     },
     {
       id: 3,
-      name: "Weather Dashboard",
-      image:
-        "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
+      name: "Astro Place: mock e-commerce",
+      image: "/project-3.png",
       description:
-        "A responsive weather dashboard with location-based forecasts, interactive maps, and historical weather data visualization.",
-      skills: ["Vue.js", "D3.js", "OpenWeather API", "Chart.js", "Sass"],
-      link: "https://github.com/bryan-garay/weather-dashboard",
+        "Project of the \"React.js con Vite.js y TailwindCSS\" course from Platzi. The goal was to put into practice web development skills.",
+      skills: ["React.js", "Vite.js", "TailwindCSS", "Netlify"],
+      link: "https://github.com/BryanGaray99/Astro-Place-e-commerce",
     },
     {
       id: 4,
-      name: "Portfolio Website",
-      image:
-        "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
+      name: "Astro Place: Express Backend with PostgreSQL",
+      image: "/project-4.png",
       description:
-        "A modern, responsive portfolio website built with React and TypeScript, featuring smooth animations and optimized performance.",
-      skills: ["React", "TypeScript", "TailwindCSS", "Framer Motion", "Vite"],
-      link: "https://github.com/bryan-garay/portfolio",
+        "This project showcases essential backend practices, including ORM for PostgreSQL, Security with Passport.js, JWT and more.",
+      skills: ["Node.js", "Express.js", "PostgreSQL", "Passport.js", "JWT", "Nodemailer"],
+      link: "https://github.com/BryanGaray99/astro-place-express-postgres-jwt",
     },
   ];
 

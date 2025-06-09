@@ -7,19 +7,19 @@ export const AboutSection = () => {
       icon: User,
       title: "Who I Am",
       description:
-        "Passionate software engineer with a love for creating innovative solutions. I enjoy tackling complex problems and turning ideas into reality through clean, efficient code.",
+        "I’m a passionate software engineer based in Guayaquil, Ecuador. I’m 25 years old.",
     },
     {
       icon: GraduationCap,
       title: "My Studies",
       description:
-        "Computer Science graduate with strong foundations in algorithms, data structures, and software architecture. Continuously learning and staying updated with the latest technologies.",
+        "I’m in my final year of the Software Engineering program at UISEK in Ecuador and hold a CTFL certification from ISTQB.",
     },
     {
       icon: Code,
       title: "Area of Expertise",
       description:
-        "Full-stack development with expertise in React, TypeScript, Node.js, and modern web technologies. Experienced in building scalable applications and user-centered designs.",
+        "I have two years of experience as a Test Automation Engineer and one year as a Frontend and Backend Developer.",
     },
   ];
 
