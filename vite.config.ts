@@ -10,4 +10,10 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // Configure base path for GitHub Pages
+  base: mode === "production" ? "/ipc-portfolio-responsive//" : "/",
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+  },
 }));
