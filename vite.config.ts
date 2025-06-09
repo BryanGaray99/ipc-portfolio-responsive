@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   // Configure base path for GitHub Pages
-  base: "https://bryangaray99.github.io/ipc-portfolio-responsive/",
+  base: "/ipc-portfolio-responsive",
   server: {
     host: "127.0.0.1",
     port: 8080,

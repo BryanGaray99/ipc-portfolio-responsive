@@ -1,6 +1,6 @@
 {
   "name": "fusion-starter",
-  "private": true,
+  "homepage": "https://bryangaray99.github.io/ipc-portfolio-responsive/",
   "type": "module",
   "scripts": {
     "dev": "vite",
