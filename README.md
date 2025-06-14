@@ -98,8 +98,7 @@ npm run build
 
 3. **Cambiar Tema Visual**:
    - En el menú de configuración, selecciona "Tema"
-   - Opciones: Claro (predeterminado), Oscuro, Alto Contraste
-   - Ideal para diferentes condiciones de iluminación y necesidades visuales
+   - Opciones: Claro (predeterminado), Oscuro
 
 ### Navegación por Teclado
 
@@ -113,7 +112,6 @@ npm run build
 Para verificar la accesibilidad:
 
 - **Lighthouse**: Audit de accesibilidad automatizado
-- **NVDA/JAWS**: Pruebas con lectores de pantalla
 - **Navegación por teclado**: Testing manual sin mouse
 - **Tests automatizados**: `npm test` (16 tests de accesibilidad)
 
@@ -136,7 +134,6 @@ src/
 | ------------------ | ---------------------------------------------- | -------------------------- |
 | **Claro**          | Colores estándar, fondo blanco, texto oscuro   | Uso general diurno         |
 | **Oscuro**         | Fondo oscuro, texto claro, menos fatiga visual | Uso nocturno, sensibilidad |
-| **Alto Contraste** | Máximo contraste negro/blanco/amarillo         | Discapacidades visuales    |
 
 ## 🌐 Soporte de Idiomas
 
