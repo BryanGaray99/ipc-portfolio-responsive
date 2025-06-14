@@ -1,0 +1,278 @@
+{
+  "es": {
+    "navigation": {
+      "home": "Inicio",
+      "about": "Acerca de mí",
+      "projects": "Proyectos",
+      "contact": "Contáctame"
+    },
+    "accessibility": {
+      "fontSize": "Tamaño de fuente",
+      "language": "Idioma",
+      "theme": "Tema",
+      "small": "Pequeño",
+      "medium": "Mediano",
+      "large": "Grande",
+      "extraLarge": "Muy grande",
+      "spanish": "Español",
+      "english": "Inglés",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "reset": "Restablecer"
+    },
+    "aria": {
+      "skipToMain": "Saltar al contenido principal",
+      "mainNavigation": "Navegación principal del sitio",
+      "goToHome": "Ir a la sección de inicio",
+      "goToAbout": "Ir a la sección acerca de mí",
+      "goToProjects": "Ir a la sección de proyectos",
+      "contactEmail": "Contactar a Bryan Garay por correo electrónico",
+      "openMenu": "Abrir menú de navegación",
+      "closeMenu": "Cerrar menú de navegación",
+      "fontSizeMenu": "Abrir menú de tamaño de fuente",
+      "languageMenu": "Abrir menú de idioma",
+      "themeSwitch": "Cambiar entre tema claro y oscuro"
+    },
+    "hero": {
+      "greeting": "👋",
+      "greetingAlt": "Saludo con la mano",
+      "title": "Hola, soy Bryan Garay",
+      "subtitle": "Ingeniero de Software",
+      "description": "Desarrollador especializado en frontend y backend con experiencia en automatización de pruebas. Apasionado por crear soluciones tecnológicas accesibles e innovadoras."
+    },
+    "about": {
+      "title": "Acerca de Mí",
+      "description": "Conoce más sobre mi trayectoria profesional, formación académica y las áreas en las que me especializo como ingeniero de software.",
+      "cards": [
+        {
+          "title": "Quién Soy",
+          "description": "Soy un ingeniero de software apasionado ubicado en Guayaquil, Ecuador. Tengo 25 años y me dedico al desarrollo de software con enfoque en la calidad y accesibilidad.",
+          "icon": "User"
+        },
+        {
+          "title": "Mi Formación",
+          "description": "Estoy en el último año de la carrera de Ingeniería de Software en UISEK Ecuador y poseo certificación CTFL de ISTQB en testing de software.",
+          "icon": "GraduationCap"
+        },
+        {
+          "title": "Área de Especialización",
+          "description": "Tengo dos años de experiencia como Ingeniero de Automatización de Pruebas y un año como Desarrollador Frontend y Backend con tecnologías modernas.",
+          "icon": "Code"
+        }
+      ],
+      "mission": {
+        "title": "Mi Misión Profesional",
+        "description": "Crear soluciones de software que no solo cumplan con los requisitos técnicos, sino que también sean accesibles, intuitivas y generen un impacto positivo en la vida de las personas. Creo firmemente en el poder de la tecnología para resolver problemas complejos y mejorar la experiencia del usuario."
+      }
+    },
+    "projects": {
+      "title": "Mis Proyectos",
+      "description": "Explora una selección de proyectos que demuestran mis habilidades en desarrollo frontend, backend, machine learning y testing de software.",
+      "items": [
+        {
+          "id": 1,
+          "name": "Simulador Web de Árboles de Decisión con Machine Learning",
+          "image": "project-1.png",
+          "description": "Aplicación web desarrollada con Django que permite predecir datos utilizando modelos de machine learning. Incluye interfaz intuitiva para cargar datasets y visualizar resultados de predicciones en tiempo real.",
+          "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Python",
+            "Django",
+            "PostgreSQL"
+          ],
+          "link": "https://github.com/BryanGaray99/ML-Predicci-n-de-Nivel-de-Afectados-en-Desastres-Naturales",
+          "category": "Machine Learning & Backend"
+        },
+        {
+          "id": 2,
+          "name": "Juego Arcade: Lobo, Cabra y Col - 5 Desafíos",
+          "image": "project-2.png",
+          "description": "Desarrollo de juego interactivo enfocado en cumplir requisitos funcionales y no funcionales, aplicando diversas técnicas de testing y optimización de rendimiento web.",
+          "skills": [
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Loadster",
+            "Google Lighthouse"
+          ],
+          "link": "https://github.com/BryanGaray99/lobo-cabra-col-5-deafios",
+          "category": "Desarrollo de Juegos & Testing"
+        },
+        {
+          "id": 3,
+          "name": "Astro Place: E-commerce Simulado",
+          "image": "project-3.png",
+          "description": "Proyecto de e-commerce desarrollado como parte del curso 'React.js con Vite.js y TailwindCSS' de Platzi. Implementa carrito de compras, filtros de productos y diseño responsivo moderno.",
+          "skills": ["React.js", "Vite.js", "TailwindCSS", "Netlify"],
+          "link": "https://github.com/BryanGaray99/Astro-Place-e-commerce",
+          "category": "Frontend & E-commerce"
+        },
+        {
+          "id": 4,
+          "name": "Backend Express con PostgreSQL para Astro Place",
+          "image": "project-4.png",
+          "description": "Backend robusto que demuestra buenas prácticas de desarrollo, incluyendo ORM para PostgreSQL, autenticación con Passport.js, JWT para sesiones seguras y sistema de notificaciones por email.",
+          "skills": [
+            "Node.js",
+            "Express.js",
+            "PostgreSQL",
+            "Passport.js",
+            "JWT",
+            "Nodemailer"
+          ],
+          "link": "https://github.com/BryanGaray99/astro-place-express-postgres-jwt",
+          "category": "Backend & Seguridad"
+        }
+      ],
+      "cta": {
+        "title": "¿Interesado en colaborar?",
+        "description": "Estos proyectos representan mi pasión por el desarrollo de software y mi compromiso con la calidad. Si tienes un proyecto en mente o quieres discutir oportunidades de colaboración, no dudes en contactarme.",
+        "buttonText": "Ver todos mis proyectos en GitHub"
+      }
+    },
+    "footer": {
+      "copyright": "© 2025 Bryan Garay. Todos los derechos reservados.",
+      "description": "Desarrollado con React, TypeScript y principios de accesibilidad web."
+    }
+  },
+  "en": {
+    "navigation": {
+      "home": "Home",
+      "about": "About Me",
+      "projects": "Projects",
+      "contact": "Contact Me"
+    },
+    "accessibility": {
+      "fontSize": "Font Size",
+      "language": "Language",
+      "theme": "Theme",
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large",
+      "extraLarge": "Extra Large",
+      "spanish": "Spanish",
+      "english": "English",
+      "light": "Light",
+      "dark": "Dark",
+      "reset": "Reset"
+    },
+    "aria": {
+      "skipToMain": "Skip to main content",
+      "mainNavigation": "Main site navigation",
+      "goToHome": "Go to home section",
+      "goToAbout": "Go to about me section",
+      "goToProjects": "Go to projects section",
+      "contactEmail": "Contact Bryan Garay via email",
+      "openMenu": "Open navigation menu",
+      "closeMenu": "Close navigation menu",
+      "fontSizeMenu": "Open font size menu",
+      "languageMenu": "Open language menu",
+      "themeSwitch": "Toggle between light and dark theme"
+    },
+    "hero": {
+      "greeting": "👋",
+      "greetingAlt": "Waving hand",
+      "title": "Hello, I'm Bryan Garay",
+      "subtitle": "Software Engineer",
+      "description": "Developer specialized in frontend and backend with experience in test automation. Passionate about creating accessible and innovative technological solutions."
+    },
+    "about": {
+      "title": "About Me",
+      "description": "Learn more about my professional journey, academic background and the areas I specialize in as a software engineer.",
+      "cards": [
+        {
+          "title": "Who I Am",
+          "description": "I'm a passionate software engineer located in Guayaquil, Ecuador. I'm 25 years old and I'm dedicated to software development with a focus on quality and accessibility.",
+          "icon": "User"
+        },
+        {
+          "title": "My Education",
+          "description": "I'm in the final year of my Software Engineering degree at UISEK Ecuador and hold CTFL certification from ISTQB in software testing.",
+          "icon": "GraduationCap"
+        },
+        {
+          "title": "Area of Expertise",
+          "description": "I have two years of experience as a Test Automation Engineer and one year as a Frontend and Backend Developer with modern technologies.",
+          "icon": "Code"
+        }
+      ],
+      "mission": {
+        "title": "My Professional Mission",
+        "description": "Create software solutions that not only meet technical requirements, but are also accessible, intuitive and generate a positive impact on people's lives. I firmly believe in the power of technology to solve complex problems and improve user experience."
+      }
+    },
+    "projects": {
+      "title": "My Projects",
+      "description": "Explore a selection of projects that demonstrate my skills in frontend, backend development, machine learning and software testing.",
+      "items": [
+        {
+          "id": 1,
+          "name": "Decision Tree Machine Learning Web Simulator",
+          "image": "project-1.png",
+          "description": "Web application built with Django that allows you to predict data using machine learning models. Includes intuitive interface to load datasets and visualize prediction results in real time.",
+          "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Python",
+            "Django",
+            "PostgreSQL"
+          ],
+          "link": "https://github.com/BryanGaray99/ML-Predicci-n-de-Nivel-de-Afectados-en-Desastres-Naturales",
+          "category": "Machine Learning & Backend"
+        },
+        {
+          "id": 2,
+          "name": "Arcade Game: Wolf, Goat and Cabbage - 5 Challenges",
+          "image": "project-2.png",
+          "description": "Interactive game development focused on meeting functional and non-functional requirements, applying various testing techniques and web performance optimization.",
+          "skills": [
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Loadster",
+            "Google Lighthouse"
+          ],
+          "link": "https://github.com/BryanGaray99/lobo-cabra-col-5-deafios",
+          "category": "Game Development & Testing"
+        },
+        {
+          "id": 3,
+          "name": "Astro Place: Mock E-commerce",
+          "image": "project-3.png",
+          "description": "E-commerce project developed as part of Platzi's 'React.js with Vite.js and TailwindCSS' course. Implements shopping cart, product filters and modern responsive design.",
+          "skills": ["React.js", "Vite.js", "TailwindCSS", "Netlify"],
+          "link": "https://github.com/BryanGaray99/Astro-Place-e-commerce",
+          "category": "Frontend & E-commerce"
+        },
+        {
+          "id": 4,
+          "name": "Express Backend with PostgreSQL for Astro Place",
+          "image": "project-4.png",
+          "description": "Robust backend demonstrating development best practices, including PostgreSQL ORM, Passport.js authentication, JWT for secure sessions and email notification system.",
+          "skills": [
+            "Node.js",
+            "Express.js",
+            "PostgreSQL",
+            "Passport.js",
+            "JWT",
+            "Nodemailer"
+          ],
+          "link": "https://github.com/BryanGaray99/astro-place-express-postgres-jwt",
+          "category": "Backend & Security"
+        }
+      ],
+      "cta": {
+        "title": "Interested in collaborating?",
+        "description": "These projects represent my passion for software development and my commitment to quality. If you have a project in mind or want to discuss collaboration opportunities, don't hesitate to contact me.",
+        "buttonText": "View all my projects on GitHub"
+      }
+    },
+    "footer": {
+      "copyright": "© 2024 Bryan Garay. All rights reserved.",
+      "description": "Built with React, TypeScript and web accessibility principles."
+    }
+  }
+}

@@ -1,62 +1,87 @@
 import { User, GraduationCap, Code } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { useAboutContent } from "@/hooks/use-content";
 
 export const AboutSection = () => {
-  const aboutCards = [
-    {
-      icon: User,
-      title: "Who I Am",
-      description:
-        "I’m a passionate software engineer based in Guayaquil, Ecuador. I’m 25 years old.",
-    },
-    {
-      icon: GraduationCap,
-      title: "My Studies",
-      description:
-        "I’m in my final year of the Software Engineering program at UISEK in Ecuador and hold a CTFL certification from ISTQB.",
-    },
-    {
-      icon: Code,
-      title: "Area of Expertise",
-      description:
-        "I have two years of experience as a Test Automation Engineer and one year as a Frontend and Backend Developer.",
-    },
-  ];
+  const about = useAboutContent();
+
+  // Map icon names to components
+  const iconMap = {
+    User,
+    GraduationCap,
+    Code,
+  };
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section
+      id="about"
+      className="py-20 bg-portfolio-primary theme-transition"
+      aria-labelledby="about-title"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#1C1E53] mb-4">
-            About Me
+        <header className="text-center mb-16">
+          <h2
+            id="about-title"
+            className="text-3xl sm:text-4xl font-bold text-portfolio-primary mb-4 theme-transition"
+          >
+            {about.title}
           </h2>
-          <div className="w-24 h-1 bg-[#2B187A] mx-auto"></div>
-        </div>
+          <div
+            className="w-24 h-1 bg-portfolio-accent mx-auto theme-transition"
+            aria-hidden="true"
+          ></div>
+          <p className="mt-6 text-lg text-portfolio-secondary max-w-3xl mx-auto leading-relaxed theme-transition">
+            {about.description}
+          </p>
+        </header>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {aboutCards.map((card, index) => {
-            const IconComponent = card.icon;
+          {about.cards.map((card, index) => {
+            const IconComponent = iconMap[card.icon as keyof typeof iconMap];
             return (
-              <Card
-                key={index}
-                className="bg-[#E6F7FF] border-none shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
-              >
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6 flex justify-center">
-                    <div className="w-16 h-16 bg-[#2B187A] rounded-full flex items-center justify-center">
-                      <IconComponent className="w-8 h-8 text-white" />
+              <article key={index}>
+                <Card
+                  className="bg-portfolio-card border-portfolio border shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 focus-within:ring-2 focus-within:ring-portfolio-accent focus-within:ring-offset-2 h-full theme-transition"
+                  role="article"
+                  aria-labelledby={`about-card-title-${index}`}
+                  aria-describedby={`about-card-desc-${index}`}
+                >
+                  <CardContent className="p-8 text-center h-full flex flex-col">
+                    <div className="mb-6 flex justify-center">
+                      <div
+                        className="w-16 h-16 bg-icon-special rounded-full flex items-center justify-center shadow-lg"
+                        aria-hidden="true"
+                      >
+                        <IconComponent className="w-8 h-8 text-white" />
+                      </div>
                     </div>
-                  </div>
-                  <h3 className="text-xl font-semibold text-[#1C1E53] mb-4">
-                    {card.title}
-                  </h3>
-                  <p className="text-[#1C1E53]/80 leading-relaxed">
-                    {card.description}
-                  </p>
-                </CardContent>
-              </Card>
+                    <h3
+                      id={`about-card-title-${index}`}
+                      className="text-xl font-semibold text-portfolio-primary mb-4 theme-transition"
+                    >
+                      {card.title}
+                    </h3>
+                    <p
+                      id={`about-card-desc-${index}`}
+                      className="text-portfolio-secondary leading-relaxed flex-grow theme-transition"
+                    >
+                      {card.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </article>
             );
           })}
+        </div>
+
+        {/* Additional information section - CONTRASTE MEJORADO */}
+        <div className="mt-16 text-center">
+          <div className="bg-special-section-gradient rounded-2xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold mb-4">{about.mission.title}</h3>
+            <p className="text-lg leading-relaxed max-w-4xl mx-auto">
+              {about.mission.description}
+            </p>
+          </div>
         </div>
       </div>
     </section>

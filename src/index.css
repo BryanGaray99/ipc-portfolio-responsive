@@ -35,19 +35,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -97,5 +90,334 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Mejoras de accesibilidad */
+
+  /* Screen reader only - oculta visualmente pero mantiene para lectores de pantalla */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* Screen reader only que se muestra al recibir foco */
+  .sr-only.focus\:not-sr-only:focus {
+    position: absolute;
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  /* Mejora de indicadores de foco para todos los elementos interactivos */
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid hsl(var(--portfolio-accent));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Foco de alto contraste para elementos personalizados */
+  .focus-ring:focus-visible {
+    outline: 2px solid hsl(var(--portfolio-accent));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Mejora de contraste para estado hover en elementos interactivos */
+  button:hover,
+  a:hover {
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* Reduce el movimiento para usuarios que prefieren menos animaciones */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Mejora de legibilidad de texto */
+  p,
+  li,
+  span {
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.3;
+  }
+
+  /* Asegurar que el contenido sea seleccionable */
+  * {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
+
+  /* Excepto para elementos que no deberían ser seleccionables */
+  button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Sistema de temas optimizado con texto principal blanco en modo oscuro */
+
+  /* Tema claro - Celeste con morado como el original */
+  :root,
+  [data-theme="light"] {
+    /* Variables principales del portafolio - TEMA CELESTE ORIGINAL */
+    --portfolio-bg: 0 0% 100%; /* #ffffff - Fondo blanco */
+    --portfolio-hero-bg: 207 100% 95%; /* #e6f7ff - Celeste claro original */
+    --portfolio-text: 251 64% 28%; /* #2b187a - Morado oscuro para texto */
+    --portfolio-text-secondary: 251 64% 28% / 0.75; /* Morado con transparencia */
+    --portfolio-accent: 251 64% 28%; /* #2b187a - Morado oscuro para accents */
+    --portfolio-accent-hover: 251 80% 21%; /* #1f1156 - Morado más oscuro en hover */
+    --portfolio-border: 220 13% 91%; /* #e5e7eb - Borde gris claro */
+    --portfolio-card-bg: 0 0% 100%; /* #ffffff - Fondo de tarjetas blanco */
+    --portfolio-nav-bg: 0 0% 100% / 0.95; /* Navbar blanco translúcido */
+    --portfolio-footer-bg: 207 100% 97%; /* #f0f9ff - Celeste muy claro para footer */
+
+    /* Variables para controles de accesibilidad */
+    --control-bg: 0 0% 100% / 0.9; /* Fondo blanco translúcido */
+    --control-border: 220 13% 91%; /* Borde gris claro */
+    --control-hover: 207 100% 97%; /* Celeste muy claro en hover */
+    --control-text: 251 64% 28%; /* Morado para texto */
+    --control-icon: 251 64% 28%; /* Morado para iconos */
+  }
+
+  /* Tema oscuro - Optimizado con texto blanco principal y celeste claro para títulos */
+  [data-theme="dark"] {
+    /* Variables principales del portafolio - TEXTO PRINCIPAL BLANCO */
+    --portfolio-bg: 220 39% 11%; /* #1e293b - Azul gris oscuro */
+    --portfolio-hero-bg: 220 39% 8%; /* #0f1419 - Azul más oscuro para hero */
+    --portfolio-text: 0 0% 100%; /* #ffffff - BLANCO PURO para texto principal */
+    --portfolio-text-secondary: 0 0% 85%; /* #d9d9d9 - Gris claro para texto secundario */
+    --portfolio-accent: 207 100% 80%; /* #87CEEB - CELESTE MÁS CLARO para títulos/accents */
+    --portfolio-accent-hover: 207 100% 70%; /* #5FBEDB - Celeste más intenso en hover */
+    --portfolio-border: 220 13% 30%; /* Borde gris oscuro */
+    --portfolio-card-bg: 220 39% 14%; /* #334155 - Azul gris para tarjetas */
+    --portfolio-nav-bg: 220 39% 11% / 0.95; /* Navbar oscuro translúcido */
+    --portfolio-footer-bg: 220 39% 8%; /* Footer más oscuro */
+
+    /* Variables para controles de accesibilidad */
+    --control-bg: 220 39% 14% / 0.9; /* Fondo oscuro translúcido */
+    --control-border: 220 13% 30%; /* Borde gris oscuro */
+    --control-hover: 220 39% 18%; /* Más claro en hover */
+    --control-text: 0 0% 100%; /* Blanco para texto de controles */
+    --control-icon: 0 0% 100%; /* Blanco para iconos de controles */
+  }
+
+  /* Aplicar tema al body */
+  body {
+    background-color: hsl(var(--portfolio-bg));
+    color: hsl(var(--portfolio-text));
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  /* Estilos responsivos para tamaños de fuente */
+  @media (max-width: 640px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 1024px) {
+    html {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  /* Ajustes de fuente para configuraciones de accesibilidad */
+  html[style*="font-size: 14px"] {
+    --font-scale: 0.875;
+  }
+
+  html[style*="font-size: 16px"] {
+    --font-scale: 1;
+  }
+
+  html[style*="font-size: 18px"] {
+    --font-scale: 1.125;
+  }
+
+  html[style*="font-size: 22px"] {
+    --font-scale: 1.375;
+  }
+
+  /* Aplicar escala de fuente a elementos específicos */
+  .text-responsive {
+    font-size: calc(1rem * var(--font-scale, 1));
+  }
+
+  .text-responsive-lg {
+    font-size: calc(1.25rem * var(--font-scale, 1));
+  }
+
+  .text-responsive-xl {
+    font-size: calc(1.5rem * var(--font-scale, 1));
+  }
+}
+
+/* Clases utilitarias para usar los temas */
+@layer utilities {
+  .bg-portfolio-primary {
+    background-color: hsl(var(--portfolio-bg));
+  }
+
+  .bg-portfolio-hero {
+    background-color: hsl(var(--portfolio-hero-bg));
+  }
+
+  .text-portfolio-primary {
+    color: hsl(var(--portfolio-text));
+  }
+
+  .text-portfolio-secondary {
+    color: hsl(var(--portfolio-text-secondary));
+  }
+
+  .bg-portfolio-accent {
+    background-color: hsl(var(--portfolio-accent));
+  }
+
+  .hover\:bg-portfolio-accent-hover:hover {
+    background-color: hsl(var(--portfolio-accent-hover));
+  }
+
+  .text-portfolio-accent {
+    color: hsl(var(--portfolio-accent));
+  }
+
+  .hover\:text-portfolio-accent:hover {
+    color: hsl(var(--portfolio-accent));
+  }
+
+  .hover\:text-portfolio-accent-hover:hover {
+    color: hsl(var(--portfolio-accent-hover));
+  }
+
+  .border-portfolio {
+    border-color: hsl(var(--portfolio-border));
+  }
+
+  .bg-portfolio-card {
+    background-color: hsl(var(--portfolio-card-bg));
+  }
+
+  .bg-portfolio-nav {
+    background-color: hsl(var(--portfolio-nav-bg));
+  }
+
+  .bg-portfolio-footer {
+    background-color: hsl(var(--portfolio-footer-bg));
+  }
+
+  /* Clases para controles de accesibilidad */
+  .bg-control {
+    background-color: hsl(var(--control-bg));
+  }
+
+  .border-control {
+    border-color: hsl(var(--control-border));
+  }
+
+  .hover\:bg-control:hover {
+    background-color: hsl(var(--control-hover));
+  }
+
+  .text-control {
+    color: hsl(var(--control-text));
+  }
+
+  .text-control-icon {
+    color: hsl(var(--control-icon));
+  }
+
+  /* Focus ring con el color correcto */
+  .focus\:ring-portfolio-accent:focus {
+    --tw-ring-color: hsl(var(--portfolio-accent));
+  }
+
+  /* Clases para íconos - SIEMPRE morado en ambos temas */
+  .bg-icon-special {
+    background-color: #2b187a; /* Morado original para íconos */
+  }
+
+  /* Clases especiales para secciones con fondo de color */
+  /* En tema claro: celeste como el hero + texto morado */
+  :root .bg-special-section,
+  [data-theme="light"] .bg-special-section {
+    background-color: hsl(207 100% 95%); /* Celeste igual que el hero */
+    color: hsl(251 64% 28%); /* Texto morado */
+  }
+
+  :root .bg-special-section-gradient,
+  [data-theme="light"] .bg-special-section-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(207 100% 95%) 0%,
+      hsl(207 100% 92%) 100%
+    ); /* Gradiente celeste suave */
+    color: hsl(251 64% 28%); /* Texto morado */
+  }
+
+  /* En tema oscuro: mantener el morado para máximo contraste */
+  [data-theme="dark"] .bg-special-section {
+    background-color: #2b187a; /* Morado original para contraste */
+    color: #ffffff; /* Texto blanco */
+  }
+
+  [data-theme="dark"] .bg-special-section-gradient {
+    background: linear-gradient(
+      135deg,
+      #2b187a 0%,
+      #1f1156 100%
+    ); /* Gradiente morado original */
+    color: #ffffff; /* Texto blanco */
+  }
+
+  /* Transiciones suaves para cambios de tema */
+  .theme-transition {
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease,
+      border-color 0.3s ease;
   }
 }
